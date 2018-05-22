@@ -3,7 +3,7 @@ package com.example.junsu.mvp_mydailyapptest.Adapter;
 
 import com.example.junsu.mvp_mydailyapptest.Model.vo.DailyListItem;
 
-public interface DailyAdapterConstruct {
+public interface DailyAdapterContract {
     interface View{
         void notifyDataUpdate();
     }

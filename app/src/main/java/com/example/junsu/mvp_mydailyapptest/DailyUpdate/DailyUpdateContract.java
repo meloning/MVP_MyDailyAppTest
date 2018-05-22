@@ -2,11 +2,11 @@ package com.example.junsu.mvp_mydailyapptest.DailyUpdate;
 
 import android.os.Bundle;
 
-import com.example.junsu.mvp_mydailyapptest.Adapter.DailyAdapterConstruct;
+import com.example.junsu.mvp_mydailyapptest.Adapter.DailyAdapterContract;
 import com.example.junsu.mvp_mydailyapptest.Model.DAO.DBManager;
 import com.example.junsu.mvp_mydailyapptest.Model.vo.DailyListItem;
 
-public interface DailyUpdateConstruct {
+public interface DailyUpdateContract {
     interface View{
         void setDailyDataItemView(Bundle bundle);
     }
@@ -14,9 +14,9 @@ public interface DailyUpdateConstruct {
     interface Presenter{
         void attachView(View view);
 
-        void setAdapterModel(DailyAdapterConstruct.Model adapterModel);
+        void setAdapterModel(DailyAdapterContract.Model adapterModel);
 
-        void setAdapterView(DailyAdapterConstruct.View adapterView);
+        void setAdapterView(DailyAdapterContract.View adapterView);
 
         void setDBManager(DBManager dbManager);
 

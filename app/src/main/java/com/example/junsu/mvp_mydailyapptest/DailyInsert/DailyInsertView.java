@@ -13,7 +13,7 @@ import com.example.junsu.mvp_mydailyapptest.Model.vo.DailyListItem;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class DailyInsertView extends AppCompatActivity implements DailyInsertConstruct.View{
+public class DailyInsertView extends AppCompatActivity implements DailyInsertContract.View{
     EditText inputTitile,inputContent;
     Button insertBtn,cancleBtn;
 

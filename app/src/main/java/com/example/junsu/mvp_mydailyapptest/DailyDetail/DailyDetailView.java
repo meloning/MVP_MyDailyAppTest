@@ -14,7 +14,7 @@ import com.example.junsu.mvp_mydailyapptest.R;
 import com.example.junsu.mvp_mydailyapptest.DailyUpdate.DailyUpdateView;
 import com.example.junsu.mvp_mydailyapptest.Model.vo.DailyListItem;
 
-public class DailyDetailView extends AppCompatActivity implements DailyDetailConstruct.View{
+public class DailyDetailView extends AppCompatActivity implements DailyDetailContract.View{
     TextView detail_title,detail_content,detail_date;
     Button updateBtn,deleteBtn;
     DailyListItem dailyListItem;

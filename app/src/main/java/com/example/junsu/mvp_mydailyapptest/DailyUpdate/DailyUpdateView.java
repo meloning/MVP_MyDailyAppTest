@@ -12,7 +12,7 @@ import com.example.junsu.mvp_mydailyapptest.R;
 import com.example.junsu.mvp_mydailyapptest.Model.vo.DailyListItem;
 
 
-public class DailyUpdateView extends AppCompatActivity implements DailyUpdateConstruct.View{
+public class DailyUpdateView extends AppCompatActivity implements DailyUpdateContract.View{
     EditText inputTitile,inputContent;
     Button checkBtn,cancleBtn;
 

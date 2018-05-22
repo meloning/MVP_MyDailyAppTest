@@ -1,28 +1,28 @@
 package com.example.junsu.mvp_mydailyapptest.DailyDetail;
 
-import com.example.junsu.mvp_mydailyapptest.Adapter.DailyAdapterConstruct;
+import com.example.junsu.mvp_mydailyapptest.Adapter.DailyAdapterContract;
 import com.example.junsu.mvp_mydailyapptest.Model.DAO.DBManager;
 import com.example.junsu.mvp_mydailyapptest.Model.vo.DailyListItem;
 
-public class DailyDetailPresenter implements DailyDetailConstruct.Presenter {
-    private DailyDetailConstruct.View view;
+public class DailyDetailPresenter implements DailyDetailContract.Presenter {
+    private DailyDetailContract.View view;
 
-    private DailyAdapterConstruct.Model adaptermodel;
-    private DailyAdapterConstruct.View adapterview;
+    private DailyAdapterContract.Model adaptermodel;
+    private DailyAdapterContract.View adapterview;
 
     private DBManager dbManager;
     @Override
-    public void attachView(DailyDetailConstruct.View view) {
+    public void attachView(DailyDetailContract.View view) {
         this.view=view;
     }
 
     @Override
-    public void setAdapterModel(DailyAdapterConstruct.Model adapterModel) {
+    public void setAdapterModel(DailyAdapterContract.Model adapterModel) {
         this.adaptermodel=adapterModel;
     }
 
     @Override
-    public void setAdapterView(DailyAdapterConstruct.View adapterView) {
+    public void setAdapterView(DailyAdapterContract.View adapterView) {
         this.adapterview=adapterView;
     }
 

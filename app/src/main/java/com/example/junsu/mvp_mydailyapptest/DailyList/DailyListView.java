@@ -18,7 +18,7 @@ import com.example.junsu.mvp_mydailyapptest.Model.DAO.DBManager;
 import com.example.junsu.mvp_mydailyapptest.Adapter.DailyListAdapter;
 
 
-public class DailyListView extends AppCompatActivity implements DailyListConstruct.View{
+public class DailyListView extends AppCompatActivity implements DailyListContract.View{
     ListView listView;
     public static DailyListAdapter dailyListAdapter;
 
@@ -125,5 +125,7 @@ public class DailyListView extends AppCompatActivity implements DailyListConstru
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
     }
+
+
 
 }

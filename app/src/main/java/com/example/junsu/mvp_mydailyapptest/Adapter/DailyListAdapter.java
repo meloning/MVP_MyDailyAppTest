@@ -14,7 +14,7 @@ import com.example.junsu.mvp_mydailyapptest.Model.vo.DailyListItem;
 
 import java.util.ArrayList;
 
-public class DailyListAdapter extends BaseAdapter implements DailyAdapterConstruct.Model, DailyAdapterConstruct.View{
+public class DailyListAdapter extends BaseAdapter implements DailyAdapterContract.Model, DailyAdapterContract.View{
     private ArrayList<DailyListItem> dailyListItems;
 
     public DailyListAdapter(){
